@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        #container {
+            height: 100vh;
+            background: #050210;
+            background-size: cover;
+        }
+
+        
+
+        #div-1 {
+            width: 500px;
+            height: 500px;
+            position: relative;
+            top: 15%;
+            border-radius: 100%;
+            background: linear-gradient(#fb5dad, #55fb9f, #b97aff);
+            margin: auto;
+            z-index: 100;
+            animation-name: div-1;
+            animation-timing-function: linear;
+            animation-duration: 1.5s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes div-1 {
+            0% {
+                transform: rotate(0deg);
+                box-shadow: 0px 0px 100px 10px #fb5dad;
+            }
+
+
+            50% {
+                transform: rotate(144);
+                box-shadow: 0px 0px 100px 10px #55fb9f;
+
+            }
+
+
+
+            100% {
+                transform: rotate(360deg);
+                box-shadow: 0px 0px 100px 10px #b97aff;
+            }
+        }
+
+
+
+        #div-2 {
+            width: 450px;
+            height: 450px;
+            border-radius: 100%;
+            background: rgb(15, 2, 44);
+            margin: auto;
+            z-index: 100;
+            position: relative;
+            top: 25px;
+            filter: sepia(0.3);
+            animation-name: div-2;
+            animation-timing-function: linear;
+            animation-duration: 1.5s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes div-2 {
+            0% {background: radial-gradient(#110735 0%, #050210 0%);}
+
+            5% {background: radial-gradient(#110735 5%, #050210 5%);}
+
+            10% {background: radial-gradient(#110735 10%, #050210 10%);}
+
+            15% {background: radial-gradient(#110735 15%, #050210 15%);}
+
+            20% {background: radial-gradient(#110735 20%, #050210 20%);}
+
+            25% {background: radial-gradient(#110735 25%, #050210 25%);}
+
+            30% {background: radial-gradient(#110735 30%, #050210 30%);}
+
+            35% {background: radial-gradient(#110735 35%, #050210 35%);}
+
+            40% {background: radial-gradient(#110735 40%, #050210 40%);}
+
+            45% {background: radial-gradient(#110735 45%, #050210 45%);}
+
+            50% {background: radial-gradient(#110735 50%, #050210 50%);}
+
+            55% {background: radial-gradient(#110735 55%, #050210 55%);}
+
+            60% {background: radial-gradient(#110735 60%, #050210 60%);}
+
+            65% {background: radial-gradient(#110735 65%, #050210 65%);}
+
+            70% {background: radial-gradient(#110735 70%, #050210 70%);}
+
+            75% {background: radial-gradient(#110735 75%, #050210 75%);}
+
+            80% {background: radial-gradient(#110735 80%, #050210 80%);}
+
+            85% {background: radial-gradient(#110735 85%, #050210 85%);}
+
+            90% {background: radial-gradient(#110735 90%, #050210 90%);}
+
+            95% {background: radial-gradient(#110735 95%, #050210 95%);}
+
+            100% {background: radial-gradient(#110735 100%, #050210 100%);}
+        }
+        #div-2::before{
+            position: absolute;
+            content: '';
+            width: 450px;
+            height: 450px;
+            filter: opacity(0.2);
+            margin: auto;
+            border-radius: 100%;
+            background: gray;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div id="div-1">
+            <div id="div-2"></div>
+        </div>
+    </div>
+</body>
+
+</html>
